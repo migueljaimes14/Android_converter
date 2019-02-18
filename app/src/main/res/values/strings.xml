@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">Conversor</string>
+    <string name="numero_1">Numero 1</string>
+    <string name="numero_2">Numero 2</string>
+    <string name="convertir">Convertir</string>
+    <string-array name="medida_array">
+        <item>Longitud</item>
+        <item>Tiempo</item>
+        <item>Tamaño de datos</item>
+    </string-array>
+    <string-array name="longitud_array">
+        <item>Seleccion 1</item>
+        <item>Kilometros</item>
+        <item>Metro</item>
+        <item>Centimetro</item>
+        <item>Milimetro</item>
+        <item>Micrometro</item>
+        <item>Nanometro</item>
+        <item>Milla</item>
+        <item>Yarda</item>
+        <item>Pie</item>
+        <item>Pulgada</item>
+        <item>Milla nautica</item>
+    </string-array>
+    <string-array name="tiempo_array">
+        <item>Seleccion 2</item>
+        <item>Kilometros</item>
+        <item>Metro</item>
+        <item>Centimetro</item>
+        <item>Milimetro</item>
+        <item>Micrometro</item>
+        <item>Nanometro</item>
+        <item>Milla</item>
+        <item>Yarda</item>
+        <item>Pie</item>
+        <item>Pulgada</item>
+        <item>Milla nautica</item>
+    </string-array>
+    <string-array name="dato_array">
+        <item>Seleccion 3</item>
+        <item>Kilometros</item>
+        <item>Metro</item>
+        <item>Centimetro</item>
+        <item>Milimetro</item>
+        <item>Micrometro</item>
+        <item>Nanometro</item>
+        <item>Milla</item>
+        <item>Yarda</item>
+        <item>Pie</item>
+        <item>Pulgada</item>
+        <item>Milla nautica</item>
+    </string-array>
+</resources>
