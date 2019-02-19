@@ -26,7 +26,8 @@
         android:inputType="numberDecimal"
         android:textAlignment="center"
         android:textColor="@android:color/black"
-        android:textSize="50dp" />
+        android:textSize="50dp"
+        android:maxLength="8"/>
 
     <Spinner
         android:id="@+id/unidad_1_spinner"
@@ -52,17 +53,14 @@
     <TextView
         android:id="@+id/resultado"
         android:layout_width="match_parent"
-        android:layout_height="106dp"
+        android:layout_height="135dp"
         android:layout_margin="7dp"
         android:hint="@string/resultado"
         android:textAlignment="center"
         android:textColor="@android:color/black"
         android:textSize="50dp" />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/colorPrimary" />
+
 
 
 </LinearLayout>

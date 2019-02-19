@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
@@ -17,14 +18,14 @@ public class MainActivity extends AppCompatActivity {
     //Opc Seleccionada
     private int opcSpinnerPrincipal,opcSpinnerSub1,opcSpinnerSub2;
     //Valor
-    private TextView valorCampoTexto;
+    private EditText valorCampoTexto;
     private double valorCampoUser;
     // Boton conversor
     Button buttonEmpezar,buttonConvertir;
     //Calculos
     Longitud longitud;
     Tiempo tiempo;
-    Dato dato;
+    Divisa divisa;
     //Resultado
     private TextView resultadoFinal;
     private double resultado;
@@ -44,8 +45,8 @@ public class MainActivity extends AppCompatActivity {
 
     private void Inicializador(){
         buttonConvertir = (Button) findViewById(R.id.convertir);
-        valorCampoTexto = (TextView) findViewById(R.id.valor_1);
-        valorCampoUser = Double.valueOf(String.valueOf(valorCampoTexto));
+        valorCampoTexto = (EditText) findViewById(R.id.valor_1);
+        valorCampoUser = 1;
         medida = R.id.medida_spinner;
         valor_1 = R.id.unidad_1_spinner;
         valor_2 = R.id.unidad_2_spinner;
@@ -57,8 +58,9 @@ public class MainActivity extends AppCompatActivity {
         resultadoFinal = (TextView) findViewById(R.id.resultado);
         longitud = new Longitud();
         tiempo = new Tiempo();
-        dato = new Dato();
+        divisa = new Divisa();
         resultado = 0;
+        Log.d("cambio: ",String.valueOf(valorCampoUser));
     }
 
     private void CrearSpinner(int id, int id_array) {
@@ -152,7 +154,7 @@ public class MainActivity extends AppCompatActivity {
             case 3:
                 CrearSubSpinner1(valor_1,dato_array);
                 CrearSubSpinner2(valor_2,dato_array);
-                resultado = dato.CalculoDato(opcSpinnerSub1,opcSpinnerSub2,valorCampoUser);
+                resultado = divisa.CalculoDivisa(opcSpinnerSub1,opcSpinnerSub2,valorCampoUser);
                 break;
         }
         resultadoFinal.setText(Double.toString(resultado));

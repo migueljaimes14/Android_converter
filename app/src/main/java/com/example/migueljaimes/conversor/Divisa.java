@@ -1,7 +1,7 @@
 package com.example.migueljaimes.conversor;
 
-public class Dato {
-    public double CalculoDato(int Spinner1,int Spinner2, double valor){
+public class Divisa {
+    public double CalculoDivisa(int Spinner1,int Spinner2, double valor){
         double resultado = 0;
         if (Spinner1 == 1){
             if (Spinner2 ==2)
@@ -35,5 +35,4 @@ public class Dato {
         }
         return resultado;
     }
-
 }
