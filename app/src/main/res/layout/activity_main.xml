@@ -8,16 +8,13 @@
     tools:context=".MainActivity"
     android:gravity="center_horizontal">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:background="@android:color/holo_blue_dark"/>
+
 
     <Spinner
         android:id="@+id/medida_spinner"
-        android:layout_margin="7dp"
-        android:layout_width="match_parent"
-        android:layout_height="45dp"></Spinner>
+        android:layout_width="364dp"
+        android:layout_height="45dp"
+        android:layout_margin="7dp"></Spinner>
 
     <EditText
         android:id="@+id/valor_1"
@@ -46,27 +43,27 @@
         android:layout_height="wrap_content"
         android:gravity="center_horizontal" />
 
-    <EditText
-        android:id="@+id/valor_2"
-        android:layout_margin="7dp"
+    <Spinner
+        android:id="@+id/unidad_2_spinner"
         android:layout_width="match_parent"
-        android:layout_height="125dp"
-        android:hint="@string/numero_2"
-        android:inputType="numberDecimal"
+        android:layout_height="45dp"
+        android:layout_margin="7dp"></Spinner>
+
+    <TextView
+        android:id="@+id/resultado"
+        android:layout_width="match_parent"
+        android:layout_height="106dp"
+        android:layout_margin="7dp"
+        android:hint="@string/resultado"
         android:textAlignment="center"
         android:textColor="@android:color/black"
         android:textSize="50dp" />
 
-    <Spinner
-        android:id="@+id/unidad_2_spinner"
-        android:layout_margin="7dp"
-        android:layout_width="match_parent"
-        android:layout_height="45dp"></Spinner>
-
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@android:color/holo_blue_dark"/>
+        android:background="@color/colorPrimary" />
 
 
 </LinearLayout>
+
